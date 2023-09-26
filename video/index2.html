@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>画像に文字が記載されサイズを変更出来ない場合、画像を切り替える方法</title>
+  <style>
+ *{
+    margin: 0;
+    padding: 0;
+  }
+
+  img{
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+
+.main-visual{
+  max-width: 1200px;
+  margin: 0 auto
+}
+  </style>
+</head>
+<body>
+  <div class="main-visual">
+
+  
+  <picture><!-- 画像に文字が記載されサイズを変更出来ない場合、画像を切り替える方法
+   -->
+    <source media="(min-width:641px)" srcset="img/main-visual.jpg 960w" sizes="960w">
+    <source media="(max-width:640px)" srcset="img/sp.jpg 640w" sizes="100vw">
+    <img src="img/02.jpg" alt="">
+  </picture>
+  <img src="img/01.jpg" alt="">
+</div>
+</body>
+</html>
