@@ -69,3 +69,37 @@ footer{
   height: 50vh;
   background-color: cornflowerblue;
 }
+
+@media(max-width:640px){
+
+  header{
+    height: 70vh;
+  }
+
+  h1{
+    font-size: 24vw;
+  }
+
+.video-wrapper{
+  flex-direction: column-reverse;
+}
+
+.video-wrapper:nth-of-type(2){
+  flex-direction: column-reverse;/
+
+}
+
+.video-box{
+  width: 100%;
+  height: 60vh;
+  position: static;
+}
+
+.txt-box{
+  width: 80%;
+
+}
+.txt-box>p{
+font-size: px;
+}
+}
